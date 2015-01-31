@@ -1,0 +1,23 @@
+{
+  "name": "Minecraft Skin Converter",
+  "version": "0.0.1",
+  "authors": [
+    "Kevan Stannard <kevanstannard@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~1.10.0"
+  }
+}
+

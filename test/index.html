@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
+ 
+    <title>Client Tests</title>
+    
+  </head>
+ 
+  <body>
+  
+    <div id="mocha"></div>
+ 
+    <script src="../bower_components/mocha/mocha.js"></script>
+    <script src="../bower_components/chai/chai.js"></script>
+    
+    <!-- Library code -->
+    <script src="../lib/convert.js"></script>
+    
+    <!-- Configure mocha and chai -->
+    <script>
+      mocha.setup({
+        ui: 'bdd'
+      });
+      assert = chai.assert;
+    </script>
+
+    <!-- Import and run the tests -->
+    <script src="tests.js"></script>
+    
+  </body>
+</html>
+

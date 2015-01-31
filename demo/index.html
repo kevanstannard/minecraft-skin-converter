@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Skin Converter Demo</title>
+    <style>
+      .skin img {
+        border:1px solid black;
+      }
+    </style>
+  </head>
+ 
+  <body>
+
+    <p>Original Skin:</p>
+    <div class="skin" id="skinOriginal"></div>
+    
+    <p>Converted Skin:</p>
+    <div class="skin" id="skinConverted"></div>
+ 
+    <script src="../lib/convert.js"></script>
+    <script>
+      (function() {
+
+        var originalSkin = document.createElement('img');
+        originalSkin.onload = render;
+        originalSkin.src = '../images/steve-64x32.png';
+        
+        function render() {
+          skinConverter.convert(originalSkin, function(error, convertedSkin){
+            document.getElementById('skinOriginal').appendChild(originalSkin);
+            document.getElementById('skinConverted').appendChild(convertedSkin);
+          });
+        }
+
+      })();
+    </script>
+    
+  </body>
+  
+</html>
+
