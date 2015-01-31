@@ -16,7 +16,7 @@ Then load and convert your images.
       // convertedSkin is the 64x64 version of the skin
     });
 
-See **demon/index.html** for a full example.
+See **demo/index.html** for a full example.
 
 ## Notes
 
